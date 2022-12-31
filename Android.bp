@@ -14,7 +14,7 @@
 
 android_app {
     name: "SystemUIFlagFlipper",
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.kt"],
     static_libs: ["SystemUIFlagsLib"],
     resource_dirs: ["res"],
     platform_apis: true,
