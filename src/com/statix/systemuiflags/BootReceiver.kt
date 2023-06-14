@@ -48,10 +48,10 @@ class BootReceiver: BroadcastReceiver() {
         for (property: String in rawProperties) {
             // Format: namespace/key=value
             val kv = property.split("=")
-            val id = kv[0].toInt()
+            val name = kv[0]
             val enabled = kv[1].toBoolean()
-            Log.i(TAG, "Setting flag ${id} to ${enabled}")
-            flagManager.setFlagValue(id, enabled)
+            Log.i(TAG, "Setting flag ${name} to ${enabled}")
+            flagManager.setFlagValue(name, enabled)
         }
     }
 }
